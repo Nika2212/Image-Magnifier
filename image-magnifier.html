@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image-Magnifier | Plugin</title>
+    <link rel="stylesheet" href="image-magnifier.css">
+</head>
+<body>
+    <div class="im-container">
+        <img src="#" alt="" class="im-image" id="image-1">
+        <span class="im-window" id="window-1"></span>
+        <span class="im-target" id="target-1"></span>
+    </div>
+
+    <script src="image-magnifier.js"></script>
+    <script>
+        const im1 = new ImageMagnifier({imageId : 'image-1', windowId : 'window-1', targetId : 'target-1'});
+        im1.onInit().uploadImage('iphone-3.jpg');
+    </script>
+</body>
+</html>
